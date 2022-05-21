@@ -1,19 +1,13 @@
-const CLAMPY_NORMAL = "./characters/clampy.png";
-const CLAMPY_HAPPY = "./characters/clampy_happy.png";
-const CLAMPY_DOUBT = "./characters/clampy_doubt.png";
-const CLAMPY_SWEAT = "./characters/clampy_sweat.png";
-const FINISH = "FINISH";
+const CLAMPY = "./characters/clampy_sprites.png";
+// These arrays represent character sprites. The first item in the array is the url of the sprite sheet. 
+// The second is the background-position-x used to show the specific sprite you want, and the third is the background-position-y. 
+const CLAMPY_NORMAL = [CLAMPY, 0, 0];
+const CLAMPY_HAPPY = [CLAMPY, 0, -300];
+const CLAMPY_DOUBT = [CLAMPY, -300, 0];
+const CLAMPY_SWEAT = [CLAMPY, -300, -300];
 
-const EPILOGUES = [
-  {
-    id: 1,
-    text: "Wow. What an incredible accomplishment. What an incredible game. You are a wonderful person and a great success. I love you.",
-  },
-  {
-    id: 2,
-    text: "Uh. I didn't think anyone would actually want a sad ending. There wasn't much of a storyline to build on. That's ok though. Everyone feels sad sometimes. I still love you.",
-  },
-];
+// This is just a constant that checks if the game is over. You could add more like this for different game stages.
+const FINISH = "FINISH";
 
 const DIALOGUE_CONTENT = [
   {
@@ -25,7 +19,7 @@ const DIALOGUE_CONTENT = [
   },
   {
     id: 2,
-    text: "I'm so happy you're here!",
+    text: "I'm so happy you're here! Welcome to Narrative Game Template, by IfThenCreate.",
     speakerName: "Clampy",
     characterImg: CLAMPY_HAPPY,
     next: 3,
@@ -71,7 +65,7 @@ const DIALOGUE_CONTENT = [
   },
   {
     id: 61,
-    text: "...fun? You think code is fun",
+    text: "...fun? You think coding is fun??",
     speakerName: "Clampy",
     characterImg: CLAMPY_DOUBT,
     next: 611,
@@ -99,7 +93,7 @@ const DIALOGUE_CONTENT = [
   },
   {
     id: 621,
-    text: "Let me tell you a bit about how this works.",
+    text: "So even though it's a game template, you can still learn a lot about web apps. Let me tell you a bit about how this works.",
     speakerName: "Clampy",
     characterImg: CLAMPY_NORMAL,
     next: 7,
@@ -158,15 +152,15 @@ const DIALOGUE_CONTENT = [
     text: "In a regular game, you may make choices that ultimately lead to different endings. Since I'm not really telling a story, I'll just let you select an ending here.",
     speakerName: "Clampy",
     characterImg: CLAMPY_NORMAL,
-    next: 13,
+    next: 12,
   },
   {
-    id: 13,
+    id: 12,
     characterImg: CLAMPY_NORMAL,
     options: [
       {
         text: "happy ending",
-        nextText: 14,
+        nextText: 13,
         setState: { epilogue: 1 },
       },
       {
@@ -193,7 +187,7 @@ const DIALOGUE_CONTENT = [
       },
       {
         text: "no",
-        nextText: 14,
+        nextText: 13,
         setState: { epilogue: 1 },
       }
     ],
@@ -203,13 +197,24 @@ const DIALOGUE_CONTENT = [
     text: "Alright, suit yourself!",
     speakerName: "Clampy",
     characterImg: CLAMPY_HAPPY,
-    next: 14,
+    next: 13,
   },
   {
-    id: 14,
+    id: 13,
     text: "Anyway, that's all I've got for you. If you make your own game with this code, I'd love to see it, so please tag me!",
     speakerName: "Clampy",
     characterImg: CLAMPY_NORMAL,
     next: FINISH
   }
+];
+
+const EPILOGUES = [
+  {
+    id: 1,
+    text: "Wow. What an incredible accomplishment. What an incredible game. You are a wonderful person and a great success. I love you.",
+  },
+  {
+    id: 2,
+    text: "Uh. I didn't think anyone would actually want a sad ending. There wasn't much of a storyline to build on. That's ok though. Everyone feels sad sometimes. I still love you.",
+  },
 ];

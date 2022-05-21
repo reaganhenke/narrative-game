@@ -1,15 +1,10 @@
 /*~~ Declare assets to load behind loading screen ~~*/
 
-imgChar1 = "./characters/clampy.png";
-imgChar2 = "./characters/clampy_doubt.png";
-imgChar3 = "./characters/clampy_happy.png";
-imgChar4 = "./characters/clampy_sweat.png";
+// If you're using more sprite sheets or background images, add them here
+imgChar1 = "./characters/clampy_sprites.png";
 
 const imageSrcs = [
-  imgChar1,
-  imgChar2,
-  imgChar3,
-  imgChar4
+  imgChar1
 ];
 imagesLoaded = false;
 

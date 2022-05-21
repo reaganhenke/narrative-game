@@ -157,14 +157,15 @@ main {
 }
 
 #character-portrait {
-  height: 450px;
-  width: 100%;
-  background-repeat: no-repeat;
-  background-size: contain;
-  background-position-x: center;
-  background-position-y: bottom;
-  bottom: 120px;
   position: absolute;
+  height: 300px;
+  width: 300px;
+  bottom: 220px;
+  left: calc(50% - 150px);
+  background-repeat: no-repeat;
+  background-size: 200%;
+  background-position-x: 0;
+  background-position-y: 0;
 }
 
 .dialogue-main {

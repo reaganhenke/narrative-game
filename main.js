@@ -34,8 +34,17 @@ function showDialogue(textNodeIndex) {
 
   $("#character-portrait").css(
     "background-image",
-    "url(" + textNode.characterImg + ")"
+    "url(" + textNode.characterImg[0] + ")"
   );
+  $("#character-portrait").css(
+    "background-position-x",
+    textNode.characterImg[1] + "px"
+  );
+  $("#character-portrait").css(
+    "background-position-y",
+    textNode.characterImg[2] + "px"
+  );
+
   $("#responses").empty(); // reset
   $("#progress-dialogue").addClass("hidden");
 
