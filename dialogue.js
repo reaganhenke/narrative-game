@@ -164,7 +164,7 @@ const DIALOGUE_CONTENT = [
   },
   {
     id: 13,
-    text: "You can swap out the spritesheet to add your own characters and edit the dialouge file to add your own text.",
+    text: "You can swap out the spritesheet to add your own characters and edit the dialogue file to add your own text.",
     speakerName: "Clampy",
     characterImg: CLAMPY_NORMAL,
     next: 14,
