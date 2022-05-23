@@ -2,7 +2,9 @@
 
 A template for a narrative game, using HTML, CSS, and JS. There are lots of engines that will build visual novels for you. For some reason, I decided not to use any.
 
-A few months ago, I wrote the code for [Ghost Whisperer](https://ifthencreate.itch.io/ghost-whisperer) so I could customize the audio puzzle. I learned a lot from [WebDevSimplified](https://github.com/WebDevSimplified/JavaScript-Text-Adventure). The full code for Ghost Whisperer is also [available on github](https://github.com/reaganhenke/narrative-jam-6). I'm sharing this simplified version with more comments so you can clone it and use it as a template for your own narrative game. You can see it in action here: [Narrative Game Template](https://ifthencreate.itch.io/narrativegametemplate).
+![screenshot of narrative game](screenshot.png)
+
+A few months ago, I wrote the code for [Ghost Whisperer](https://ifthencreate.itch.io/ghost-whisperer) so I could customize the audio puzzle. I learned a lot from [WebDevSimplified](https://github.com/WebDevSimplified/JavaScript-Text-Adventure). The full code for Ghost Whisperer is also [available on github](https://github.com/reaganhenke/narrative-jam-6). I'm sharing this simplified version with more comments so you can clone it and use it as a template for your own narrative game. You can see it in action on itch.io here: [Narrative Game Template](https://ifthencreate.itch.io/narrativegametemplate).
 
 Are there bugs? Probably. Feel free to contribute or suggest new features. This was just a fun little project. Let me know if you have questions, suggestions, or make something cool with it!
 
@@ -75,5 +77,5 @@ Different gameplay can lead to different endings. A response option can select t
 ## Styling
 Customize whatever you want! You can add your own spritesheets, add backgrounds, replace the "speaking" sound, add colors, etc etc etc. 
 
-## How to Use
+## Next Steps
 You can fork or clone this repository and add your changes. View the game by opening `index.html` in a browser. If you want to publish on itch, you can compress the files into a zip and upload them. Easy peasy!
