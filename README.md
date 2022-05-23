@@ -2,9 +2,9 @@
 
 A template for a narrative game, using HTML, CSS, and JS. There are lots of engines that will build visual novels for you. For some reason, I decided not to use any.
 
-A few months ago, I wrote the code for [Ghost Whisperer](https://ifthencreate.itch.io/ghost-whisperer) so I could customize the audio puzzle. I learned a lot from [WebDevSimplified](https://github.com/WebDevSimplified/JavaScript-Text-Adventure). The full code for Ghost Whisperer is also [available on github](https://github.com/reaganhenke/narrative-jam-6). I'm sharing this simplified version with more comments so you can clone it and use it as a template for your own narrative game. 
+A few months ago, I wrote the code for [Ghost Whisperer](https://ifthencreate.itch.io/ghost-whisperer) so I could customize the audio puzzle. I learned a lot from [WebDevSimplified](https://github.com/WebDevSimplified/JavaScript-Text-Adventure). The full code for Ghost Whisperer is also [available on github](https://github.com/reaganhenke/narrative-jam-6). I'm sharing this simplified version with more comments so you can clone it and use it as a template for your own narrative game. You can see it in action here: [Narrative Game Template](https://ifthencreate.itch.io/narrativegametemplate).
 
-Are there bugs? Probably. This was just a fun little project. Let me know if you have questions, suggestions, or make something cool with it!
+Are there bugs? Probably. Feel free to contribute or suggest new features. This was just a fun little project. Let me know if you have questions, suggestions, or make something cool with it!
 
 See more of my work through [IfThenCreate](https://linktr.ee/ifthencreate).
 
@@ -29,9 +29,13 @@ Dialogue goes in [dialogue.js](./dialogue.js). A dialogue object looks like this
 }
 ```
 `id`: the ID of the dialogue object
+
 `text`: the content of the dialogue, this shows up on screen
+
 `speakerName`: the name of the speaker
+
 `characterImg`: a array to the sprite sheet of the speaker, x position, and y position
+
 `next`: the ID of the next dialogue object
 
 Dialogue objects may have response options, instead of text. 
@@ -57,7 +61,9 @@ Dialogue objects may have response options, instead of text.
 }
 ```
 `id`: the ID of the dialogue object
+
 `characterImg`: a url to the image of the speaker
+
 `options`: a list of response options that will show up on the screen, and the IDs they lead to
 
 ## Loading
@@ -67,4 +73,7 @@ Any assets you use should be added to the arrays in [loading.js](./loading.js). 
 Different gameplay can lead to different endings. A response option can select to an epilogue with `setState: { epilogue: 1 }` (the number is the epilogue ID). Epilogues can be defined in [dialogue.js](./dialogue.js). When a text option leads to `FINISH`, instead of another ID, the game will show the selected epilogue. 
 
 ## Styling
-Customize whatever you want!
+Customize whatever you want! You can add your own spritesheets, add backgrounds, replace the "speaking" sound, add colors, etc etc etc. 
+
+## How to Use
+You can fork or clone this repository and add your changes. View the game by opening `index.html` in a browser. If you want to publish on itch, you can compress the files into a zip and upload them. Easy peasy!
